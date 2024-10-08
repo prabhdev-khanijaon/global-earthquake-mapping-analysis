@@ -1,47 +1,57 @@
 # Global Earthquake Mapping & Analysis
 
-# Overview
-Welcome to the Global Earthquake Mapping & Analysis project! This repository contains a Python application that retrieves real-time earthquake data from the USGS (United States Geological Survey) API, visualizes it on an interactive world map using Plotly, and performs data analysis to uncover insights about global seismic activity.
+## Overview
+This project is focused on analyzing and visualizing global earthquake data using Python. The primary goal is to showcase data analysis and visualization skills relevant to data analyst roles. The project includes scripts that parse, clean, and analyze earthquake data, as well as generate interactive visualizations using Plotly.
 
-# Project Motivation
-Understanding earthquake patterns is crucial for disaster preparedness, urban planning, insurance risk assessment, and environmental studies. This project aims to make seismic data accessible and interpretable through interactive visualizations and statistical analysis, demonstrating data analytics and visualization skills relevant for aspiring data analysts and data scientists.
+## The project demonstrates the following core competencies:
+Data Parsing: Reading and processing raw data from geoJSON and CSV files.
+Data Cleaning: Extracting relevant data (latitude, longitude, magnitude) and handling missing or incomplete information.
+Data Visualization: Presenting insights via interactive maps that allow users to explore earthquake magnitudes and locations around the world.
 
-# Features
-Interactive Map Visualization: Displays earthquakes on a global map with markers sized and colored according to magnitude.
+## Skills Demonstrated
+Data Wrangling: Extracting and cleaning data from various sources (geoJSON, CSV).
+Geospatial Visualization: Using Plotly for interactive and insightful data visualizations on global maps.
+Automation & Optimization: Refactoring code for improved automation and scalability.
 
-Geospatial Analysis: Identifies seismic hotspots and patterns related to tectonic activity.
+## Key Features
+Global Earthquake Mapping: Interactive visualizations of earthquake occurrences worldwide, scaled by magnitude.
+Recent Earthquake Analysis: Focus on seismic events from the past 30 days.
+Fire Event Mapping (Optional): Visual representation of recent global fires using satellite data for added insight into natural disaster patterns.
 
-Data Export: Option to export the processed data to CSV for further analysis.
+## Technologies Used
+Python: Primary language for data processing and visualization.
+Plotly: For creating interactive maps and scatter plots.
+Pandas: For data manipulation and cleaning.
+GeoJSON & CSV: Earthquake and fire data formats used for analysis.
 
-# Technologies Used
-Python 3.12.3
+## Future Improvements
+Real-time Data Integration: Automating the update of earthquake and fire data using live API connections.
+Extended Analysis: Incorporating additional features like time-based filtering and the analysis of historical trends in seismic activity.
+Dashboard Integration: Expanding the project to include a user-friendly dashboard for non-technical users.
 
-Plotly: For interactive data visualization.
+## Data Sources
+Earthquake Data: The earthquake data is sourced from USGS Earthquake Catalog, providing real-time earthquake information.
+Fire Data: Fire data is sourced from NASA’s MODIS Fire Database, offering satellite-based fire detections.
 
-GeoJSON: For handling geographical data.
+## How to Run the Project
+Clone the repository:
 
-# Data Source
-USGS Earthquake Catalog API
+bash
+Copy code
+git clone https://github.com/prabhdev-khanijaon/global-earthquake-mapping-analysis.git
+Install the required dependencies:
 
-Endpoint: USGS API
+bash
+Copy code
+pip install -r requirements.txt
+Run any of the Python scripts to visualize the earthquake or fire data. For example:
 
-Provides real-time and historical earthquake data worldwide.
+bash
+Copy code
+python eq_explore_data.py
+For fire mapping, use:
 
-# Potential Applications
-Disaster Preparedness: Helps governments and organizations allocate resources effectively.
+bash
+Copy code
+python world_fires.py
 
-Insurance Risk Assessment: Assists insurance companies in pricing premiums based on regional seismic activity.
-
-Urban Planning: Informs infrastructure development and building codes in earthquake-prone areas.
-
-Academic Research: Serves as a tool for geoscientists studying tectonic movements.
-
-# Future Enhancements
-Real-Time Data Retrieval: Fetches up-to-date earthquake data from the USGS API.
-
-Data Filtering: Allows customization of data based on magnitude, depth, time range, and geographic location.
-
-Statistical Analysis: Calculates key statistics such as average magnitude, depth distribution, and frequency of occurrences.
-
-# Acknowledgments
-USGS Earthquake Catalog: For providing comprehensive and accessible earthquake data.
