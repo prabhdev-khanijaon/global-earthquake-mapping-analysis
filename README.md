@@ -1,80 +1,111 @@
-# Global Earthquake Mapping & Analysis
+# 🌍 Global Earthquake Mapping & Analysis
 
-## Overview
-This project is focused on analyzing and visualizing global earthquake data using Python. The primary goal is to showcase data analysis and visualization skills relevant to data analyst roles. The project includes scripts that parse, clean, and analyze earthquake data, as well as generate interactive visualizations using Plotly.
+This project analyzes and visualizes global earthquake data using **Python**, **Plotly**, and geospatial datasets.  
+It highlights core skills in **data parsing**, **cleaning**, and **interactive visualization**, making it ideal for data analyst portfolios and real-world data work.
 
-## The project demonstrates the following core competencies:
-Data Parsing: Reading and processing raw data from geoJSON and CSV files.
+---
 
-Data Cleaning: Extracting relevant data (latitude, longitude, magnitude) and handling missing or incomplete information.
+## 🧠 Project Overview
 
-Data Visualization: Presenting insights via interactive maps that allow users to explore earthquake magnitudes and locations around the world.
+- Parses and analyzes global earthquake data from **GeoJSON** and **CSV** sources.
+- Creates interactive maps that visualize earthquake **magnitude**, **location**, and **frequency**.
+- Optionally includes **global fire data mapping** using NASA satellite inputs.
+- Emphasizes automation, scalability, and real-world geospatial insight.
 
-## Skills Demonstrated
-Data Wrangling: Extracting and cleaning data from various sources (geoJSON, CSV).
+---
 
-Geospatial Visualization: Using Plotly for interactive and insightful data visualizations on global maps.
+## 🔍 Skills Demonstrated
 
-Automation & Optimization: Refactoring code for improved automation and scalability.
+- **Data Wrangling**: Extracted and cleaned structured data from GeoJSON and CSV formats.
+- **Geospatial Visualization**: Used Plotly to create dynamic global maps and scatter plots.
+- **Automation & Optimization**: Refactored scripts for reusability and modularity.
 
-## Key Features
-Global Earthquake Mapping: Interactive visualizations of earthquake occurrences worldwide, scaled by magnitude.
+---
 
-Recent Earthquake Analysis: Focus on seismic events from the past 30 days.
+## ✨ Key Features
 
-Fire Event Mapping (Optional): Visual representation of recent global fires using satellite data for added insight into natural disaster patterns.
+- 🌐 **Global Earthquake Mapping**:
+  - Plots recent earthquakes on a world map, scaled by magnitude.
+  - Focus on events from the **past 30 days** using real data from the **USGS**.
 
-## Technologies Used
-Python: Primary language for data processing and visualization.
+- 🔥 **Optional Fire Mapping**:
+  - Visualizes active global fire locations using NASA’s MODIS satellite data.
 
-Plotly: For creating interactive maps and scatter plots.
+- 📍 **Interactive Plots**:
+  - Hoverable tooltips showing magnitude, location, and depth.
+  - Fully interactive zoom and pan experience via Plotly.
 
-Pandas: For data manipulation and cleaning.
+---
 
-GeoJSON & CSV: Earthquake and fire data formats used for analysis.
+## 🛠️ Technologies Used
 
-## Future Improvements
-Real-time Data Integration: Automating the update of earthquake and fire data using live API connections.
+| Tool       | Purpose                                |
+|------------|----------------------------------------|
+| Python     | Main scripting and data handling       |
+| Plotly     | Interactive map and scatter plots      |
+| Pandas     | Data manipulation and filtering        |
+| GeoJSON    | Earthquake data format (from USGS)     |
+| CSV        | Used for alternate or fire datasets    |
 
-Extended Analysis: Incorporating additional features like time-based filtering and the analysis of historical trends in seismic activity.
+---
 
-Dashboard Integration: Expanding the project to include a user-friendly dashboard for non-technical users.
+## 📈 Future Improvements
 
-## Data Sources
-Earthquake Data: The earthquake data is sourced from USGS Earthquake Catalog, providing real-time earthquake information.
+- 🔄 **Real-Time Data**: Automate refresh from USGS/NASA APIs.
+- 📊 **Historical Analysis**: Time-series analysis of global seismic activity.
+- 🖥️ **Dashboard UI**: Build a web-based dashboard for public exploration.
 
-Fire Data: Fire data is sourced from NASA’s MODIS Fire Database, offering satellite-based fire detections.
+---
 
-## How to Run the Project
-Clone the repository:
+## 🌍 Data Sources
 
-bash
+- **USGS Earthquake Catalog**:  
+  [https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
 
-Copy code
+- **NASA MODIS Fire Data**:  
+  [https://firms.modaps.eosdis.nasa.gov/](https://firms.modaps.eosdis.nasa.gov/)
 
+---
+
+## ⚙️ How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/prabhdev-khanijaon/global-earthquake-mapping-analysis.git
+cd global-earthquake-mapping-analysis
+````
 
-Install the required dependencies:
+### 2. Install Dependencies
 
-bash
-
-Copy code
-
+```bash
 pip install -r requirements.txt
+```
 
-Run any of the Python scripts to visualize the earthquake or fire data. For example:
+### 3. Run the Visualizations
 
-bash
+#### 📌 Earthquake Map (last 30 days)
 
-Copy code
-
+```bash
 python eq_explore_data.py
+```
 
-For fire mapping, use:
+#### 🔥 Fire Mapping (optional)
 
-bash
-
-Copy code
-
+```bash
 python world_fires.py
+```
 
+> Visualizations will open in your browser via Plotly as **interactive maps**.
+
+---
+
+## 📌 Notes
+
+* Built with **Python 3.x**
+* Ideal for showcasing geospatial analysis and interactive visualizations
+* Demonstrates end-to-end pipeline: **data ingestion → processing → visual storytelling**
+
+---
+
+Feel free to fork, star ⭐, or contribute!
